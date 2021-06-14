@@ -1,0 +1,28 @@
+{
+        "settings": {
+            "number_of_shards": 2,
+            "number_of_replicas": 1
+        },
+        "mappings": {
+            "properties": {
+                "source_ip": {
+                    "type": "keyword"
+                },
+                "dest_ip": {
+                    "type": "keyword"
+                },
+                "source_port": {
+                    "type": "keyword"
+                },
+                "dest_port": {
+                    "type": "keyword"
+                },
+                "protocol" : {
+                    "type": "keyword"
+                },
+                "action": {
+                    "type": "boolean"
+                }
+            }
+        }
+    }

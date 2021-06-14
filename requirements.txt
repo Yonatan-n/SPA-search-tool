@@ -1,0 +1,10 @@
+flask
+elasticsearch
+datetime
+perceval
+python-dateutil
+ndjson
+requests
+elasticsearch_dsl
+requests
+flask-cors

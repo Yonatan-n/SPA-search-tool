@@ -8,8 +8,8 @@ build containers `docker-compose up -d --build`
 `docker-compose up -d`
 ### populate db
 wait a few minutes for elastic to start, can check at http://localhost:5601. than run:
-`docker exec -it spa-search-tool_web_1 sh` \
-drops you a shell inside the running container, than in the shell run:
+`docker exec -it spa-search-tool_web_1 sh`. \
+this command drops you a shell inside the running container, in that shell run:
 `python populate_elastic.py`
 
 ### view web app

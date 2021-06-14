@@ -18,7 +18,6 @@ elastic = Elasticsearch([ELASTIC_URL], verify_certs=True)
 @app.route('/bulk-add-packets', methods=['POST'])
 def bulk_add_packets():
     json_ = json.loads(request.json)
-    print(json_, type(json_))
     bulk(index=INDEX_NAME, client=elastic, actions=(json_))
     return {"ok": True}
 

@@ -36,7 +36,6 @@ def random_action() -> bool:
     return bool(randint(0, 1))  # ACCEPTED, or DROPPED,
 
 connections.create_connection(hosts=["es01"])
-print('bad')
 class Packet(Document):
     source_ip = Keyword()  # Ip()
     dest_ip = Keyword()  # Ip()
